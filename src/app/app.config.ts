@@ -1,8 +1,21 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import {
+  ApplicationConfig,
+  Provider,
+  provideZoneChangeDetection,
+} from '@angular/core';
 import { provideRouter } from '@angular/router';
+import { appRoutes } from './app.routes';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '@environments/environment';
 
-import { routes } from './app.routes';
+const storeDevtools: Provider[] = !environment.production
+  ? [StoreDevtoolsModule.instrument().ngModule]
+  : [];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
+  providers: [
+    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideRouter(appRoutes),
+    ...storeDevtools,
+  ],
 };

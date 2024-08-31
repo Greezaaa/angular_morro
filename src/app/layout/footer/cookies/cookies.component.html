@@ -1,0 +1,56 @@
+<!-- cookies icon -->
+<button (click)="showLargePolicy()">🍪</button>
+
+<!-- Small Cookie Notice -->
+<div *ngIf="smallVisible" class="small-cookie-notice">
+  <h2>We don't use cookies🍪</h2>
+  <p>
+    {{
+      "Al utilizar nuestro sitio web, aceptas el uso de almacenamiento local para los fines descritos anteriormente. Puedes gestionar tus preferencias en cualquier momento ajustando la configuración de tu navegador o contactándonos directamente."
+        | translate
+    }}
+  </p>
+  <button (click)="acceptCookies()">Accept</button>
+  <button (click)="showLargePolicy()">Read More</button>
+</div>
+
+<!-- Large Cookie Policy -->
+<div *ngIf="largeVisible" class="large-cookie-policy">
+  <button class="close-btn" (click)="closeLargePolicy()">Close</button>
+  <h2>{{ "cookies.title" | translate }}</h2>
+  <p>{{ "cookies.par1" | translate }}</p>
+  <h3>{{ "cookies.whatWeUseTitle" | translate }}</h3>
+  <p>{{ "cookies.whatWeUse" | translate }}</p>
+  <ul>
+    <li>{{ "cookies.whatWeUseList.item1" | translate }}</li>
+    <li>{{ "cookies.whatWeUseList.item2" | translate }}</li>
+  </ul>
+  <h3>{{ "cookies.whatWeDoNotUseTitle" | translate }}</h3>
+  <ul>
+    <li>{{ "cookies.whatWeDoNotUseList.item1" | translate }}</li>
+    <li>{{ "cookies.whatWeDoNotUseList.item2" | translate }}</li>
+    <li>{{ "cookies.whatWeDoNotUseList.item3" | translate }}</li>
+  </ul>
+  <h3>{{ "cookies.yourConsentTitle" | translate }}</h3>
+  <p>{{ "cookies.yourConsent" | translate }}</p>
+  <h3>{{ "cookies.howToManageTitle" | translate }}</h3>
+  <p>{{ "cookies.howToManage" | translate }}</p>
+  <ul>
+    <li>{{ "cookies.howToManageList.item1" | translate }}</li>
+    <li>{{ "cookies.howToManageList.item2" | translate }}</li>
+    <li>{{ "cookies.howToManageList.item3" | translate }}</li>
+  </ul>
+  <p>{{ "cookies.howToManageFurther" | translate }}</p>
+  <h3>{{ "cookies.yourRightsTitle" | translate }}</h3>
+  <p>{{ "cookies.yourRights" | translate }}</p>
+  <h3>{{ "cookies.contactUsTitle" | translate }}</h3>
+  <p>{{ "cookies.contactUs" | translate }}</p>
+  <ul>
+    <li>{{ "cookies.contactDetails.email" | translate }}</li>
+    <li>{{ "cookies.contactDetails.phone" | translate }}</li>
+    <li>{{ "cookies.contactDetails.address" | translate }}</li>
+  </ul>
+
+  <button (click)="acceptCookies()">Accept</button>
+  <button class="close-btn" (click)="closeLargePolicy()">Close</button>
+</div>
