@@ -1,0 +1,41 @@
+{
+  "HELLO": "Hello",
+  "WELCOME": "Welcome to our website!",
+  "madeBy": "Made with 🧡 by Yevheniy Alekseyev",
+
+  "cookies": {
+    "title": "Cookie Policy",
+    "par1": "At Morrocotuda, we prioritize your online privacy and strive to provide you with the best experience possible when visiting our website. We want to inform you that we do not use cookies for tracking or advertising purposes. However, we do use certain technologies to enhance your browsing experience and personalize content based on your preferences.",
+    "whatWeUseTitle": "What We Use",
+    "whatWeUse": "We use local storage to:",
+    "whatWeUseList": {
+      "item1": "Remember your language preferences.",
+      "item2": "Store your preference for a light or dark theme on our website."
+    },
+    "whatWeDoNotUseTitle": "What We Do Not Use",
+    "whatWeDoNotUseList": {
+      "item1": "We do not use cookies to track your browsing behavior on other websites.",
+      "item2": "We do not use cookies for targeted advertising.",
+      "item3": "We do not allow third-party cookies on our website."
+    },
+    "yourConsentTitle": "Your Consent",
+    "yourConsent": "By using our website, you agree to the use of local storage for the purposes described above. You can manage your preferences at any time by adjusting your browser settings. If you prefer, you can also contact us directly for assistance.",
+    "howToManageTitle": "How to Manage Your Preferences",
+    "howToManage": "You can control and manage your preferences regarding local storage through your browser settings. Most browsers allow you to:",
+    "howToManageList": {
+      "item1": "Delete local storage and cookies.",
+      "item2": "Block local storage or cookies for specific sites.",
+      "item3": "Set your preferences for the use of local storage or cookies."
+    },
+    "howToManageFurther": "For more detailed instructions, please refer to your browser's help documentation.",
+    "yourRightsTitle": "Your Rights",
+    "yourRights": "You have the right to access, rectify, delete, and restrict the processing of your personal data. If you have any questions or concerns about our use of local storage or your privacy on our website, please contact us using the information provided below.",
+    "contactUsTitle": "Contact Us",
+    "contactUs": "If you have any questions or concerns regarding our cookie policy or your privacy, please contact us at:",
+    "contactDetails": {
+      "email": "your-email@example.com",
+      "phone": "your-phone-number",
+      "address": "your-company-address"
+    }
+  }
+}
