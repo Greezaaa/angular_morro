@@ -1,5 +1,9 @@
 footer {
   background-color: rgb(171, 171, 206);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5em;
 
   .footer__wrapper {
     background-color: lightcoral;

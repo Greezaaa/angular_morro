@@ -28,6 +28,7 @@ export class CookiesComponent implements OnInit {
     this.cookiesAccepted = true;
     this.cookiesStore.acceptCookies();
     this.smallVisible = false;
+    this.largePolicyVisible = false;
   }
 
   declineCookies() {

@@ -1,16 +1,11 @@
 <footer>
   <div class="footer__wrapper">
-    <p class="footer__author">
-      with 🧡 by
-      <a href="https://greezaaa.es" [title]="'madeBy' | translate">Jeka</a>
-    </p>
-
-    <!-- <div>
-    <button (click)="acceptCookies()">Accept Cookies</button>
-    <button (click)="declineCookies()">Decline Cookies</button>
-  </div> -->
-
-    <!-- @if(!store.isCookiesAccepted() ){<app-cookies [showModal]="true"></app-cookies>} -->
+    <div class="footer__author">
+      <span>
+        with 🧡 by
+        <a href="https://greezaaa.es" [title]="'madeBy' | translate">Jeka</a>
+      </span>
+    </div>
     <app-cookies [showModal]="!cookiesStore.isCookiesAccepted()"></app-cookies>
   </div>
 </footer>
