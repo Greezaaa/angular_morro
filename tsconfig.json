@@ -23,7 +23,8 @@
     "paths": {
       "@app/*": ["src/app/*"],
       "@data-assets/*": ["src/data-assets/*"],
-      "@stores/*": ["src/stores/*"],
+      "@stores/*": ["src/app/stores/*"],
+      "@services/*": ["src/app/services/*"],
       "@environments/*": ["src/environments/*"]
     }
   },

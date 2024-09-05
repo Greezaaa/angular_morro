@@ -1,16 +1,18 @@
-<ng-content>
-  <div>
-    <h1>{{ "HELLO" | translate }}</h1>
-    <p>{{ "WELCOME" | translate }}</p>
-    <button (click)="switchLanguage('en')">English</button>
-    <button (click)="switchLanguage('es')">Español</button>
+<div class="page__container">
+  <div class="page__content">
+    <app-header></app-header>
+    <ng-content>
+      <div>
+        <h1>{{ "HELLO" | translate }}</h1>
+        <p>{{ "WELCOME" | translate }}</p>
+        <button (click)="switchLanguage('en')">English</button>
+        <button (click)="switchLanguage('es')">Español</button>
+      </div>
+    </ng-content>
+
+    <ng-content>
+      <router-outlet></router-outlet>
+    </ng-content>
   </div>
-</ng-content>
-
-<app-header></app-header>
-
-<ng-content>
-  <router-outlet></router-outlet>
-</ng-content>
-
-<app-footer></app-footer>
+  <app-footer></app-footer>
+</div>

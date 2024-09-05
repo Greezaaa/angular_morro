@@ -12,41 +12,38 @@ import { CookiesStore } from '@stores/cookies/cookies.store';
   providers: [CookiesStore],
 })
 export class CookiesComponent implements OnInit {
-  @Input() showModal = false; // Input property to control modal display
+  @Input() showModal = false;
 
-  readonly cookiesStore = inject(CookiesStore); // Injecting the CookiesStore
-  smallVisible = false; // State for small modal visibility
-  largeVisible = false; // State for large modal visibility
-  cookiesAccepted = false; // Track if cookies have been accepted
+  readonly cookiesStore = inject(CookiesStore);
+  smallVisible = false;
+  largePolicyVisible = false;
+  cookiesAccepted = false;
 
   ngOnInit() {
-    // Check if cookies have already been accepted
     this.cookiesAccepted = this.cookiesStore.isCookiesAccepted();
-    this.smallVisible = !this.cookiesAccepted; // Show small modal if cookies are not accepted
+    this.smallVisible = !this.cookiesAccepted;
   }
 
-  // Method to accept cookies
   acceptCookies() {
     this.cookiesAccepted = true;
-    this.cookiesStore.acceptCookies(); // Save acceptance in store
-    this.smallVisible = false; // Hide small modal
+    this.cookiesStore.acceptCookies();
+    this.smallVisible = false;
+    this.largePolicyVisible = false;
   }
-  // Method to deslikl cookies
+
   declineCookies() {
     this.cookiesAccepted = false;
-    this.cookiesStore.declineCookies(); // Save declinatane in store
-    this.smallVisible = false; // Hide small modal
+    this.cookiesStore.declineCookies();
+    this.smallVisible = false;
   }
 
-  // Method to open the large cookie policy
   showLargePolicy() {
-    this.largeVisible = true;
-    this.smallVisible = false; // Hide small modal
+    this.largePolicyVisible = true;
+    this.smallVisible = false;
   }
 
-  // Method to close the large cookie policy
   closeLargePolicy() {
-    this.largeVisible = false;
+    this.largePolicyVisible = false;
     this.smallVisible = !this.cookiesAccepted;
   }
 }
