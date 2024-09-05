@@ -1,0 +1,13 @@
+footer {
+  background-color: rgb(171, 171, 206);
+
+  .footer__wrapper {
+    background-color: lightcoral;
+    width: min(62.5em, calc(100dvw - 2em));
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

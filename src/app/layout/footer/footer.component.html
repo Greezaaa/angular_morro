@@ -1,12 +1,16 @@
-<p>
-  with 🧡 by
-  <a href="https://greezaaa.es" [title]="'madeBy' | translate">Jeka</a>
-</p>
+<footer>
+  <div class="footer__wrapper">
+    <p class="footer__author">
+      with 🧡 by
+      <a href="https://greezaaa.es" [title]="'madeBy' | translate">Jeka</a>
+    </p>
 
-<div>
-  <button (click)="acceptCookies()">Accept Cookies</button>
-  <button (click)="declineCookies()">Decline Cookies</button>
-</div>
+    <!-- <div>
+    <button (click)="acceptCookies()">Accept Cookies</button>
+    <button (click)="declineCookies()">Decline Cookies</button>
+  </div> -->
 
-<!-- @if(!store.isCookiesAccepted() ){<app-cookies [showModal]="true"></app-cookies>} -->
-<app-cookies [showModal]="!cookiesStore.isCookiesAccepted()"></app-cookies>
+    <!-- @if(!store.isCookiesAccepted() ){<app-cookies [showModal]="true"></app-cookies>} -->
+    <app-cookies [showModal]="!cookiesStore.isCookiesAccepted()"></app-cookies>
+  </div>
+</footer>
