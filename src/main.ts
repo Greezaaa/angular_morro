@@ -1,6 +1,6 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
-import { translationProviders } from '@services/translate.config';
+import { translationProviders } from '@app/services/translatate/translate.config';
 import { AppComponent } from '@app/app.component';
 import { appConfig } from '@app/app.config';
 
