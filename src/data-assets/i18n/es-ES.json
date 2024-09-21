@@ -1,5 +1,41 @@
 {
   "HELLO": "Hola",
   "WELCOME": "¡Bienvenido a nuestro sitio web!",
-  "madeBy": "Echo con 🧡 por Yevheniy Alekseyev"
+  "madeBy": "Echo con 🧡 por Yevheniy Alekseyev",
+  "cookies": {
+    "popupMsg": "Al utilizar nuestro sitio web, aceptas el uso de almacenamiento local para los fines descritos anteriormente. Puedes gestionar tus preferencias en cualquier momento ajustando la configuración de tu navegador o contactándonos directamente.",
+    "title": "Política de Cookies",
+    "par1": "En Morrocotuda, priorizamos tu privacidad en línea y nos esforzamos por ofrecerte la mejor experiencia posible al visitar nuestro sitio web. Queremos informarte que no usamos cookies para rastreo o fines publicitarios. Sin embargo, utilizamos ciertas tecnologías para mejorar tu experiencia de navegación y personalizar contenido según tus preferencias.",
+    "whatWeUseTitle": "Lo Que Usamos",
+    "whatWeUse": "Usamos almacenamiento local para:",
+    "whatWeUseList": {
+      "item1": "Recordar tus preferencias de idioma.",
+      "item2": "Almacenar tu preferencia por un tema claro u oscuro en nuestro sitio web."
+    },
+    "whatWeDoNotUseTitle": "Lo Que No Usamos",
+    "whatWeDoNotUseList": {
+      "item1": "No usamos cookies para rastrear tu comportamiento de navegación en otros sitios web.",
+      "item2": "No usamos cookies para publicidad dirigida.",
+      "item3": "No permitimos cookies de terceros en nuestro sitio web."
+    },
+    "yourConsentTitle": "Tu Consentimiento",
+    "yourConsent": "Al utilizar nuestro sitio web, aceptas el uso de almacenamiento local para los fines descritos anteriormente. Puedes gestionar tus preferencias en cualquier momento ajustando la configuración de tu navegador. Si lo prefieres, también puedes contactarnos directamente para obtener ayuda.",
+    "howToManageTitle": "Cómo Gestionar Tus Preferencias",
+    "howToManage": "Puedes controlar y gestionar tus preferencias respecto al almacenamiento local a través de la configuración de tu navegador. La mayoría de los navegadores te permiten:",
+    "howToManageList": {
+      "item1": "Eliminar almacenamiento local y cookies.",
+      "item2": "Bloquear almacenamiento local o cookies para sitios específicos.",
+      "item3": "Establecer tus preferencias para el uso de almacenamiento local o cookies."
+    },
+    "howToManageFurther": "Para instrucciones más detalladas, consulta la documentación de ayuda de tu navegador.",
+    "yourRightsTitle": "Tus Derechos",
+    "yourRights": "Tienes derecho a acceder, rectificar, eliminar y restringir el procesamiento de tus datos personales. Si tienes alguna pregunta o inquietud sobre nuestro uso del almacenamiento local o tu privacidad en nuestro sitio web, contáctanos utilizando la información proporcionada a continuación.",
+    "contactUsTitle": "Contáctanos",
+    "contactUs": "Si tienes alguna pregunta o inquietud con respecto a nuestra política de cookies o tu privacidad, por favor contáctanos en:",
+    "contactDetails": {
+      "email": "tu-correo@ejemplo.com",
+      "phone": "tu-número-de-teléfono",
+      "address": "tu-dirección-de-empresa"
+    }
+  }
 }

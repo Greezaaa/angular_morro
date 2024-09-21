@@ -5,10 +5,7 @@
 <div class="cookies__small-notice">
   <h2>We don't use cookies🍪</h2>
   <p>
-    {{
-      "Al utilizar nuestro sitio web, aceptas el uso de almacenamiento local para los fines descritos anteriormente. Puedes gestionar tus preferencias en cualquier momento ajustando la configuración de tu navegador o contactándonos directamente."
-        | translate
-    }}
+    {{ "cookies.popupMsg" | translate }}
   </p>
   <button (click)="acceptCookies()">Accept</button>
   <button (click)="showLargePolicy()">Read More</button>
