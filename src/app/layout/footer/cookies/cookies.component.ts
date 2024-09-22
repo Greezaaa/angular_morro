@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, computed, inject, Input, OnInit } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CookiesStore } from '@stores/cookies/cookies.store';
 

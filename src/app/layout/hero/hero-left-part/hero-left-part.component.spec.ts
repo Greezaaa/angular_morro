@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HeroLeftPartComponent } from './hero-left-part.component';
 
 describe('HeroLeftPartComponent', () => {
@@ -8,9 +7,8 @@ describe('HeroLeftPartComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeroLeftPartComponent]
-    })
-    .compileComponents();
+      imports: [HeroLeftPartComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(HeroLeftPartComponent);
     component = fixture.componentInstance;

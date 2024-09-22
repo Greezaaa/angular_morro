@@ -9,4 +9,6 @@ import { HeroRightPartComponent } from './hero-right-part/hero-right-part.compon
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
-export class HeroComponent {}
+export class HeroComponent {
+  selected: boolean = false;
+}

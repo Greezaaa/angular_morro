@@ -5,7 +5,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { MainComponent } from './layout/main/main.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
-import { TranslationService } from '@app/services/translatate/translate.service';
+import { TranslationService } from './services/translate/translate.service';
+import { RouteWatcherService } from './services/router/router.service';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,14 @@ import { TranslationService } from '@app/services/translatate/translate.service'
 export class AppComponent {
   title = 'morro_ng_playground';
 
-  constructor(private translationService: TranslationService) {}
+  constructor(
+    private translationService: TranslationService,
+    private routeWatcher: RouteWatcherService
+  ) {}
+
+  ngOnInit() {
+    this.routeWatcher.initializeRouteWatcher();
+  }
 
   switchLanguage(language: string) {
     this.translationService.switchLanguage(language);
